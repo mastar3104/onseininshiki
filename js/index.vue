@@ -2,8 +2,8 @@
     <div id="app">
         <img id="icon" src="../img/icon.png">
         <div id="result-div">
-            <span>{{ result }}</span>
-            <i style="color:#ddd;">{{ interimTranscript }}</i>
+            <span style="color:#FFFFFF;">{{ result }}</span>
+            <i style="color:#aaa">{{ interimTranscript }}</i>
         </div>
         <div id="console">
             <input type="text" v-model="manualInput" @change="setManualInput">
@@ -58,7 +58,7 @@
         },
         ondoku(kanji) {
           let audio = new Audio()
-          audio.src = "http://localhost:3000/yukkuri.mp3?kanji=" + kanji
+          audio.src = "https://www.yukumo.net/api/v2/aqtk1/koe.mp3?type=f1&kanji=" + kanji
           audio.load();
           audio.addEventListener('ended', (e) => {
             setTimeout(this.clearResult(kanji), 3000)
