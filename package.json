@@ -7,7 +7,7 @@
     "start": "node app.js",
     "debug": "npm run build && npm run start",
     "view": "rm -rf .cache && parcel index.html",
-    "build": "rm -rf ./dist && parcel build -d ./dist ./index.html --public-url ./"
+    "build": "rm -rf ./docs && parcel build -d ./docs ./index.html --public-url ./"
   },
   "author": "",
   "license": "ISC",
