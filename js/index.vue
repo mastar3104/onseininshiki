@@ -1,6 +1,5 @@
 <template>
     <div id="app">
-        <img id="icon" src="../img/icon.png">
         <div id="result-div">
             <span style="color:#FFFFFF;">{{ result }}</span>
             <i style="color:#aaa">{{ interimTranscript }}</i>
